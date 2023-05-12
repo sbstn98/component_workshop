@@ -1,0 +1,29 @@
+:root {
+  --color-main: pink;
+  --color-white: #fff;
+  --color-black: #000;
+  --sizing-s: 16px;
+  --sizing-m: 24px;
+  --sizing-l: 32px;
+  --sizing-xl: 64px;
+  --spacing-xs: 16px;
+  --spacing-s: 32px;
+  --spacing-m: 64px;
+  --spacing-l: 96px;
+  --font-family: Arial;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: var(--sizing-xl);
+}
+h2 {
+  font-size: var(--sizing-m);
+}
+p {
+  font-size: var(--sizing-s);
+}
