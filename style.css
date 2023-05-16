@@ -11,8 +11,14 @@
   --spacing-s: 32px;
   --spacing-m: 64px;
   --spacing-l: 96px;
+  --spacing-xl: 192px;
   --font-family: Arial;
   --button-border: groove;
+  --button-border-none: none;
+}
+
+main {
+  margin: 0 var(--spacing-xl) 0 var(--spacing-xl);
 }
 
 body {
@@ -34,8 +40,18 @@ main {
   padding: var(--spacing-l);
 }
 
-button {
+.btn {
+  padding: var(--sizing-s) var(--sizing-l) var(--sizing-s) var(--sizing-l);
+}
+
+.btn--default {
   border-style: var(--button-border);
+  border-color: var(--color-black);
+  background-color: var(--color-main);
+}
+
+.btn--action {
+  border-style: var(--button-border-none);
   border-color: var(--color-black);
   padding: var(--sizing-s) var(--sizing-l) var(--sizing-s) var(--sizing-l);
   background-color: var(--color-main);
@@ -43,9 +59,24 @@ button {
 
 img {
   width: 300px;
-  margin: var(--sizing-s);
+  margin: var(--sizing-l);
 }
+
+/* utility classes */
+
 .flex {
   display: flex;
-  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  text-align: center;
 }
